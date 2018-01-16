@@ -1,1 +1,82 @@
-research
+
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="google-site-verification" content="Gfy9O-WGLlwrbp0YKuSgtfPnUDBrm9HGNcT4PKaSI3U" />
+    <title>Chen Du</title>
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/navbar-static-top.css" rel="stylesheet">
+    <link href="./css/justified-nav.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <a href="http://videoprocessing.ucsd.edu"><img src="http://videoprocessing.ucsd.edu/~bkkang/img/vpl.png"></a>
+        <ul class="nav nav-justified">
+        <!-- 都改成你的github io 地址-->
+            <li class="active"><a href="https://fengyuchen.github.io/index">Home</a></li>
+            <li><a href="https://fengyuchen.github.io/research">Research</a></li>
+            <li><a href="https://fengyuchen.github.io/publication">Publication</a></li>
+            <li><a href="https://fengyuchen.github.io/resume">Resume</a></li>
+            <li><a href="https://fengyuchen.github.io/index">Contact</a></li>
+        </ul>
+      </div>
+
+ 	
+    <div class="container">
+      <div class="page-header">
+        <!-- research 说明 修改-->
+        <h4>My current research interests are computer vision and image/video processing. Specifically, I am working on human-computer interaction, gesture recognition, hand pose estimation, and hand tracking.</h4>
+      </div>
+    </div>
+    <div class="well">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <!-- research 说明，注意图片放到img文件夹里面，下面两个其他的research也一样-->
+                <h2>Sign language fingerspelling recognition using CNNs</h2>
+                <h4> Sign language recognition is important for natural and convenient communication between deaf community and hearing majority. We take the highly efficient initial step of automatic fingerspelling recognition system using convolutional neural networks (CNNs) from depth maps. In this work, we consider relatively larger number of classes compared with the previous literature. We train CNNs for the classification of 31 alphabets and numbers using a subset of collected depth data from multiple subjects. While using different learning configurations, such as hyper-parameter selection with and without validation, we achieve 99.99% accuracy for observed signers and 83.58% to 85.49% accuracy for new signers. The result shows that accuracy improves as we include more data from different subjects during training. The processing time is 3 ms for the prediction of a single image. To the best of our knowledge, the system achieves the highest accuracy and speed. The trained model and dataset is available on our repository.
+                <img src="img/sign_class.png" class="img-responsive" alt="Responsive image"></h4>
+                <p> B. Kang</b>, S. Tripathi, and T. Nguyen, "Real-time Sign Language Fingerspelling Recognition using Convolutional Neural Networks from Depth map," ACPR 2015</p>            </div>
+        </div>
+    </div>
+    <div class="well">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h2>Hand articulations tracking</h2>
+                <h4> Real-time hand articulations tracking is important for many applications such as interacting with virtual / augmented reality devices or tablets. However, most of existing algorithms highly rely on expensive and high power-consuming GPUs to achieve real-time processing. Consequently, these systems are inappropriate for mobile and wearable devices. Therefore, we propose an efficient hand tracking system which does not require high performance GPUs.</h4>
+                <h4> In our system, we track hand articulations by minimizing discrepancy between depth map from sensor and computer-generated hand model. We also initialize hand pose at each frame using finger detection and classification. Our contributions are: (a) propose adaptive hand model to consider different hand shapes of users without generating personalized hand model; (b) improve the highly efficient frame initialization for robust tracking and automatic initialization; (c) propose hierarchical random sampling of pixels from each depth map to improve tracking accuracy while limiting required computations. To the best of our knowledge, it is the first system that achieves both automatic hand model adjustment and real-time tracking without using GPUs.
+                  <img src="img/hand_tracking.png" class="img-responsive" alt="Responsive image"></h4>
+                <p> B. Kang, Y. Lee, and T. Nguyen, "Efficient Hand Articulations Tracking using Adaptive Hand Model and Depth map," ISVC 2015</p>            </div>
+        </div>
+    </div>
+    <div class="well">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h2>Hand segmentation</h2>
+                <h4> We proposed hand segmentation method based on color information, depth data, and physical characteristic using Microsoft Kinect. Accurate and robust real-time hand segmentation has been important technique for many applications. The proposed method employed the skin color model proposed by Jones et al. and 3D physical characteristic of hand. The features include the size, shape, and connectivity of hand. The method has no limitation of the position of hand, motion cues, the detection of whole body, and wearing specific glove. The experimental results show that the proposed method is able to segment hand from other body parts and other objects in real-time.</h4>
+                  <img src="img/handsegmentation.jpg" class="img-responsive" alt="Responsive image">
+              </div>
+        </div>
+    </div>
+    <div class="well">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h2>Facial muscles 3D modeling using MRI</h2>
+                <h4> We proposed 3D human face modeling based on facial muscles using magnetic resonance imaging (MRI) with ultra-short echo-time (UTE) pulse sequence. T1-weighted, isotropic (1.0x1.0x.1.0mm3) resolution 3D invivo data was acquired with 3 tesla MR scanner. We employed anisotropic diffusion filter, morphological operations, and region growing algorithm for segmentation of facial muscles. We were able to segment and reconstruct the following facial muscles: orbicularis oris, mentalis, orbicularis oculi, zygomaticus major, zygomaticus minor, temporalis, and buccinators. The segmented muscles using UTE images can improve 3D human face modeling. Human face modeling should consider facial muscles in order to produce accurate face models for trustworthy results of imaginary plastic surgery and natural 3D animations.</h4>
+                  <img src="img/facialmuscle.jpg" class="img-responsive" alt="Responsive image"></p>
+                <p> B. Kang, M. Kim, T. Hong, and D. Kim, “Facial Muscles 3D Modeling using Ultra-short Echo-time (UTE) Magnetic Resonance Imaging (MRI),” IEEK Summer Conference 2013</p>
+              </div>
+        </div>
+    </div>
+
+    
+    <script src="./bootstrap/jquery-1.10.2.min.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+
+</body></html>
